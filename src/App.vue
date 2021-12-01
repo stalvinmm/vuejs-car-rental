@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+  <router-view/>
+  <shifthead/>
+  <chooseyourride/>
+  <safety/>
+  <howitworks/>
+  <contactinfo/>
+  <shiftfooter/>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import shifthead from './components/shifthead';
+import chooseyourride from './components/chooseyourride';
+import safety from './components/safety';
+import howitworks from './components/howitworks';
+import contactinfo from './components/contactinfo';
+import shiftfooter from './components/shiftfooter';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    shifthead,
+    chooseyourride,
+    safety,
+    howitworks,
+    contactinfo,
+    shiftfooter
+  },
+};
+</script>
