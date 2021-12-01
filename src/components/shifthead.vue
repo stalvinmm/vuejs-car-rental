@@ -5,7 +5,7 @@
             <div class="maincontainer">
                 <div class="container con1">
                     <div class="row1 d-flex row">
-                        <div class="rowleft d-flex align-items-center col-lg-6 col-sm-12">
+                        <div class="rowleft d-flex align-items-center col-lg-6 col-md-12 col-sm-12">
                             <div class="tollfree text-white"><i class="fa fa-phone fa-lg " aria-hidden="true"></i> TOLL-FREE : 80074438</div>
                             <div class="watsapp text-white pl-4"><i class="fa fa-whatsapp fa-lg " aria-hidden="true"></i> WATSAPP : +971 56 549 2707</div>
                         </div>
@@ -33,7 +33,7 @@
                     </div>
                     <!-- ----------------------------------------------row-2------------------------------------- -->
                     <div class="row2 d-flex row">
-                        <div class="rowleft2 d-flex text-white col-lg-6 col-sm-12">
+                        <div class="rowleft2 d-flex text-white col-lg-6 col-md-12 col-sm-12">
                             <div class="about1 pl"><i class="bi bi-person-fill fa-lg"></i> ABOUT US</div>
                             <div class="offers1 pl-4"><i class="bi bi-percent fa-lg"></i>OFFERS</div>
                             <div class="contact1 pl-4"><i class="bi bi-at fa-lg"></i><router-link to="/howitworks" class="text-white text-decoration-none">CONTACT US</router-link></div>
