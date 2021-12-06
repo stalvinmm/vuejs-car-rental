@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+.maincontainer {
+    background-image: url('images/imagea1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 140px;
+}
+
+.row1 {
+    padding: 30px 0px;
+}
+
+.shiftimage {
+    padding: 30px 0px;
+    width: 160px;
+}
+
+.con1 {
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+.a1,
+.a2 {
+    color: white;
+}
+
+.con-2 {
+    margin-top: 10px;
+    margin-left: 560px;
+}
+
+
+/* input.transparent-input {
+    background-color: transparent !important;
+    border: none !important;
+} */
+
+#border1 {
+    color: white;
+    background: white;
+    height: 2px;
+    width: 90vw;
+    margin: 0 50px;
+}
+
+.text-carrental {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+}
+
+.findacar {
+    opacity: 50%;
+    border-radius: 5px;
+    height: 300px;
+    width: 80vw;
+    background-color: black;
+}
+
+.sectioncontainer1 {
+    justify-content: space-between;
+}
+
+.section2a {
+    height: 600px;
+    text-align: center;
+}
+
+.sectioncontainer2 {
+    margin: 8px 0px;
+    background-image: url('images/image2.png');
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.section1b {
+    width: 600px;
+    color: white;
+}
+
+.pimage {
+    position: absolute;
+    top: -150px;
+}
+
+.subhowitworks {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+}
+
+.subhowitworks div img {
+    width: 160px;
+}
+
+.directioncolumn {
+    flex-direction: column;
+}
+
+.footer1 {
+    background-image: url('images/image4.png');
+    width: 100vw;
+    background-size: cover;
+}
+
+.footer2 {
+    background-color: rgb(0, 0, 0, 0.9);
+    width: 100vw;
+}
+
+.fsec1 {
+    width: 30%;
+}
+
+.fsec2 {
+    width: 20%;
+}
+
+.fsec5,
+.fsec6 {
+    width: 100%;
+}
+
+@media only screen and (max-width:1100px) {
+    .pimage img {
+        width: 650px;
+    }
+    .pimage {
+        top: -115px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .pimage img {
+        width: 500px;
+    }
+    .pimage {
+        top: -100px;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .pimage img {
+        width: 350px;
+    }
+    .pimage {
+        top: -70px;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .car2a1 {
+        width: 85px;
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .con1,
+    .headerbtn {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .rowright {
+        padding-right: 0px;
+    }
+}
+
+#more {
+    display: none;
+}
