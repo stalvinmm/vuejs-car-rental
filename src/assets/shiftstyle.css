@@ -6,10 +6,6 @@
     font-family: 'Lora', serif;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 
 /* --------------------------------------------------------------------------------------- */
 
@@ -23,7 +19,6 @@ body {
 
 .row1 {
     padding: 30px 0px;
-    width: 100%;
 }
 
 .shiftimage {
@@ -49,10 +44,11 @@ body {
     margin-left: 560px;
 }
 
-input.transparent-input {
+
+/* input.transparent-input {
     background-color: transparent !important;
     border: none !important;
-}
+} */
 
 #border1 {
     color: white;
@@ -177,8 +173,15 @@ input.transparent-input {
 }
 
 @media only screen and (max-width:360px) {
-    .con1 {
+    .con1,
+    .headerbtn {
         font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .rowright {
+        padding-right: 0px;
     }
 }
 

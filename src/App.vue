@@ -1,12 +1,12 @@
 <template>
 <div>
-  <router-view/>
-  <shifthead/>
-  <chooseyourride/>
-  <safety/>
-  <howitworks/>
-  <contactinfo/>
-  <shiftfooter/>
+  <shifthead />
+  <chooseyourride />
+  <safety />
+  <howitworks />
+  <contactinfo />
+  <shiftfooter />
+  <tempo />
 </div>
 </template>
 
@@ -17,6 +17,7 @@ import safety from './components/safety';
 import howitworks from './components/howitworks';
 import contactinfo from './components/contactinfo';
 import shiftfooter from './components/shiftfooter';
+import Tempo from './components/tempo';
 
 export default {
   name: 'App',
@@ -27,7 +28,8 @@ export default {
     safety,
     howitworks,
     contactinfo,
-    shiftfooter
+    shiftfooter,
+    Tempo
   },
 };
 </script>
