@@ -349,14 +349,12 @@
 </template>
 
 
-<style>
+<style scoped>
 .containermain {
   background-color: #dedede;
   border-radius: 20px;
 }
-.v-application--wrap {
-  min-height: 0vh !important;
-}
+
 </style>
 
 <script>

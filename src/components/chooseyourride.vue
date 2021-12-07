@@ -1,4 +1,5 @@
 <template>
+<v-app>
   <!-- <div class="row"> -->
   <div class="sectioncontainer1 row">
     <div class="section1a row col-lg-6 col-md-6 col-sm-12">
@@ -38,7 +39,7 @@
       </h1>
       <!-- ---------------------------------carousel start------------------------------------------- -->
       <div class="slider">
-        <v-app>
+        
           <v-sheet class="mx-auto" max-width="550">
             <v-slide-group
               v-model="model"
@@ -75,12 +76,13 @@
               </v-slide-item>
             </v-slide-group>
           </v-sheet>
-        </v-app>
+        
       </div>
       <!-- ---------------------------------carousel end------------------------------------------- -->
     </div>
   </div>
   <!-- </div> -->
+  </v-app>
 </template>>
 
 
