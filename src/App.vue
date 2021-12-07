@@ -6,7 +6,7 @@
   <howitworks />
   <contactinfo />
   <shiftfooter />
-  <tempo />
+  <chooseyourridelist />
 </div>
 </template>
 
@@ -17,7 +17,7 @@ import safety from './components/safety';
 import howitworks from './components/howitworks';
 import contactinfo from './components/contactinfo';
 import shiftfooter from './components/shiftfooter';
-import Tempo from './components/tempo';
+import Chooseyourridelist from './components/chooseyourridelist.vue';
 
 export default {
   name: 'App',
@@ -29,7 +29,9 @@ export default {
     howitworks,
     contactinfo,
     shiftfooter,
-    Tempo
+    Chooseyourridelist
   },
 };
 </script>
+
+    Chooseyourride
