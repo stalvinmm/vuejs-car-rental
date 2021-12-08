@@ -61,22 +61,27 @@
               >
                 <v-card class="ma-5" height="350" width="190">
                   <v-row class="fill-height" align="center" justify="center">
-                    <img class="car-img-row" :src="carimg.car_img1" alt="car" />
+                    <!-- ----------------------------------------------------------------- -->
+                    <img 
+                    class="car-img-row" 
+                    :src="carimg.car_img1" 
+                    alt="car" />
                     <p>
-                      {{ carimg.car_type
+                      {{ carimg.car_type1
                       }}<font class="text-info ml-1"
-                        >({{ carimg.car_count }})</font
+                        >({{ carimg.car_count1 }})</font
                       >
                     </p>
+                    <!-- ---------------------------------------------------------------- -->
                     <img
                       class="car-img-row"
                       :src="carimg.car_img2"
                       alt="model"
                     />
                     <p>
-                      {{ carimg.car_type
+                      {{ carimg.car_type2
                       }}<font class="text-info ml-1"
-                        >({{ carimg.car_count }})</font
+                        >({{ carimg.car_count2 }})</font
                       >
                     </p>
 
@@ -137,54 +142,68 @@ export default {
   data: () => ({
     carimages: [
       {
-        car_type: "Small",
-        car_count: "45",
+        car_type1: "Small",
+        car_count1: "45",
+        car_type2: "Sedan",
+        car_count2: "48",
         car_img1:
           "https://freepngimg.com/thumb/car/93811-car-levante-maserati-2018-vehicle-free-hd-image-thumb.png",
         car_img2:
           "https://freepngimg.com/thumb/car/60643-car-z4-sdrive35is-bmw-2015-convertible-thumb.png",
       },
       {
-        car_type: "Sedan",
-        car_count: "10",
+        car_type1: "Lux",
+        car_count1: "58",
+        car_type2: "Sport",
+        car_count2: "11",
         car_img1:
           "https://freepngimg.com/thumb/car/1-2-car-png-picture-thumb.png",
         car_img2:
           "https://freepngimg.com/thumb/car/7-2-car-free-png-image-thumb.png",
       },
       {
-        car_type: "Electric",
-        car_count: "15",
+        car_type1: "Long",
+        car_count1: "30",
+        car_type2: "Electric",
+        car_count2: "29",
         car_img1: "https://freepngimg.com/thumb/car/11-2-car-picture-thumb.png",
         car_img2:
           "https://freepngimg.com/thumb/car/9-2-car-high-quality-png-thumb.png",
       },
       {
-        car_type: "LUX",
-        car_count: "50",
+        car_type1: "Coupe",
+        car_count1: "15",
+        car_type2: "Small Sedan",
+        car_count2: "12",
         car_img1:
           "https://freepngimg.com/thumb/car/60643-car-z4-sdrive35is-bmw-2015-convertible-thumb.png",
         car_img2:
           "https://freepngimg.com/thumb/car/58064-utility-sport-car-2018-m40i-vehicle-x3-thumb.png",
       },
       {
-        car_type: "Single",
-        car_count: "20",
+        car_type1: "Station",
+        car_count1: "70",
+        car_type2: "Wagon",
+        car_count2: "36",
         car_img1:
           "https://freepngimg.com/thumb/car/58029-wide-series-aero-sports-m6-bmw-car-thumb.png",
         car_img2:
           "https://freepngimg.com/thumb/car/77321-image,-series-car-dealership-bmw-vehicle-white-thumb.png",
       },
       {
-        car_type: "Sport",
-        car_count: "30",
+        car_type1: "Hatchback",
+        car_count1: "89",
+        car_type2: "Convertable",
+        car_count2: "08",
         car_img1: "https://freepngimg.com/thumb/car/4-2-car-png-hd-thumb.png",
         car_img2:
           "https://freepngimg.com/thumb/car/3-2-car-free-download-png-thumb.png",
       },
       {
-        car_type: "Double",
-        car_count: "30",
+        car_type1: "Mini",
+        car_count1: "58",
+        car_type2: "Pickup",
+        car_count2: "19",
         car_img1:
           "https://freepngimg.com/thumb/car/74698-car-amg-sls-bmw-m3-mercedes-benz-sports-thumb.png",
         car_img2:

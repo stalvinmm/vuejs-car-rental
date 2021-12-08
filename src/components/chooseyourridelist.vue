@@ -1,17 +1,18 @@
 <template>
   <v-app>
-      <!-- --------------------------hearder----------------------- -->
-      <div>
-        <h1 class="my-5 d-flex justify-content-center">
-          CHOOSE YOUR<font class="text-info ml-2">RIDE</font>
-        </h1>
-      </div>
+    <!-- --------------------------hearder----------------------- -->
+    <div>
+      <h1 class="my-5 d-flex justify-content-center">
+        CHOOSE YOUR<font class="text-info ml-2">RIDE</font>
+      </h1>
+    </div>
 
-      <!-- -------------------------------card start-------------------------------- -->
+    <!-- -------------------------------card start-------------------------------- -->
 
+    <div class="card-container d-flex">
       <div class="car-card-main">
         <div class="car-each">
-          <v-card class="mx-auto" max-width="400">
+          <v-card class="mx-auto" max-width="360">
             <v-list-item three-line>
               <v-list-item-content>
                 <div>
@@ -51,6 +52,8 @@
           </v-card>
         </div>
       </div>
+      <!-- ------------------------------------------car-card-end---------------------------- -->
+    </div>
   </v-app>
 </template>
 
@@ -77,6 +80,6 @@ export default {
   padding: 20px 0px;
 }
 .car-each {
-  width: 60vw;
+  width: 30vw;
 }
 </style>
