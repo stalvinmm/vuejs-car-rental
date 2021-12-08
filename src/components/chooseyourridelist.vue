@@ -9,23 +9,28 @@
 
     <!-- -------------------------------card start-------------------------------- -->
 
-    <div class="card-container d-flex">
-      <div class="car-card-main">
-        <div class="car-each">
-          <v-card class="mx-auto" max-width="360">
-            <v-list-item three-line>
+    <div class="card-container d-flex ">
+      <div class="row car-card-main d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 car-each my-5"
+        v-for="(rating_car, rating_index) in ratingcards"
+              :key="rating_index"
+        >
+          <v-card class="mx-auto" max-width="360"
+          >
+            <v-list-item three-line
+            >
               <v-list-item-content>
                 <div>
-                  <h6><b>Nissan</b></h6>
+                  <h6><b>{{ rating_car.car_name }}</b></h6>
                 </div>
                 <v-list-item-title class="text-h5 mb-1">
                   <h6>
-                    <b><font class="text-info">AED425</font> /Per Day</b>
+                    <b><font class="text-info">{{ rating_car.car_cost }}</font> /Per Day</b>
                   </h6>
                 </v-list-item-title>
                 <div>
                   <v-rating
-                    v-model="rating"
+                    v-model="rating_car.rating"
                     background-color="white"
                     color="orange"
                     dense
@@ -33,14 +38,15 @@
                     hover
                     size="18"
                   ></v-rating
-                  >{{ rating }}
+                  >{{ rating_car.rating }}
                 </div>
               </v-list-item-content>
               <!-- -------------------car-card-image------------------------------------- -->
               <v-img
                 class="mt-4"
-                width="70px"
-                src="https://www.pngall.com/wp-content/uploads/11/Tuning-Car-PNG-Photo.png"
+                width="60px"
+                height="100px"
+                :src="rating_car.car_card_image"
               ></v-img>
             </v-list-item>
 
@@ -60,7 +66,63 @@
 <script>
 export default {
   data: () => ({
-    rating: 4.3,
+    ratingcards:[
+      {
+        rating: 2.5,
+        car_name:"Chrysler",
+        car_cost:"AED425",
+        car_card_image:"https://pngimg.com/uploads/chrysler/chrysler_PNG56.png",
+      },
+      {
+        rating: 3,
+        car_name:"BMW",
+        car_cost:"AED425",
+        car_card_image:"https://freepngimg.com/thumb/car/60643-car-z4-sdrive35is-bmw-2015-convertible.png",
+      },
+      {
+        rating: 5,
+        car_name:"Maserati",
+        car_cost:"AED425",
+        car_card_image:"https://freepngimg.com/thumb/car/93811-car-levante-maserati-2018-vehicle-free-hd-image.png",
+      },
+      {
+        rating: 4,
+        car_name:"Mercedes",
+        car_cost:"AED425",
+        car_card_image:"https://freepngimg.com/thumb/car/4-2-car-png-hd.png",
+      },
+      {
+        rating: 3.5,
+        car_name:"Nissan",
+        car_cost:"AED425",
+        car_card_image:"https://www.pngall.com/wp-content/uploads/11/Tuning-Car-PNG-Photo.png",
+      },
+      {
+        rating: 2,
+        car_name:"BMW m40i",
+        car_cost:"AED425",
+        car_card_image:"https://freepngimg.com/thumb/car/58064-utility-sport-car-2018-m40i-vehicle-x3.png",
+      },
+      {
+        rating: 4.5,
+        car_name:"Benz",
+        car_cost:"AED425",
+        car_card_image:"https://freepngimg.com/thumb/car/74698-car-amg-sls-bmw-m3-mercedes-benz-sports.png",
+      },
+      {
+        rating: 5,
+        car_name:"Romeo",
+        car_cost:"AED425",
+        car_card_image:"https://pngimg.com/uploads/alfa_romeo/alfa_romeo_PNG70.png",
+      },
+      {
+        rating: 4,
+        car_name:"Audi",
+        car_cost:"AED425",
+        car_card_image:"https://pngimg.com/uploads/audi/audi_PNG1741.png",
+      },
+      
+    ]
   }),
 };
 </script>
@@ -82,4 +144,5 @@ export default {
 .car-each {
   width: 30vw;
 }
+
 </style>

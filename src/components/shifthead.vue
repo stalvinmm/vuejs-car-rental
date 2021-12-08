@@ -1,11 +1,7 @@
 <template>
   <div>
     <div class="row">
-<<<<<<< HEAD
-      <!-- --------------------------------------login section------------------------------------------------ -->
-=======
       <!-- --------------------------------------socio-media section------------------------------------------------ -->
->>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
       <div class="maincontainer">
         <div class="container con1">
           <div class="row1 d-flex row">
@@ -22,14 +18,9 @@
                 80074438
               </div>
               <div class="watsapp text-white pl-4">
-<<<<<<< HEAD
-                <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i> WATSAPP
-                : +971 56 549 2707
-=======
                 <img
                   src="https://img.icons8.com/color/38/000000/whatsapp--v1.png"
                 />+971 56 549 2707
->>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
               </div>
             </div>
             <div
@@ -75,26 +66,6 @@
                   <a class="dropdown-item" href="#">Spanish</a>
                 </div>
               </div>
-<<<<<<< HEAD
-              <router-link to="/loginpage">
-                <div class="login">
-                  <!-- <button type="button" class="headerbtn btn text-white">
-                    Register
-                  </button> -->
-                </div>
-              </router-link>
-            </div>
-          </div>
-          <!-- ----------------------------------------------search section------------------------------------- -->
-          <div class="row2 d-flex row">
-            <div
-              class="rowleft2 d-flex text-white col-lg-6 col-md-12 col-sm-12"
-            >
-              <div class="about1 pl">
-                <i class="bi bi-house fa-lg"></i
-                ><router-link to="/" class="text-decoration-none text-white">HOME</router-link>
-              </div>
-=======
               <!-- ------------------------register section start------------------ -->
               <div>
                 <div class="register-btn-head">
@@ -322,7 +293,6 @@
             >
               <div class="aboutbg"></div>
               <div class="about1 pl"><i class="bi bi-house fa-lg"></i>HOME</div>
->>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
               <div class="about1 pl-4">
                 <i class="bi bi-person-fill fa-lg"></i>ABOUT US
               </div>
@@ -330,40 +300,6 @@
                 <i class="bi bi-percent fa-lg"></i>OFFERS
               </div>
               <div class="contact1 pl-4">
-<<<<<<< HEAD
-                <i class="bi bi-at fa-lg"></i
-                ><router-link
-                  to="/howitworks"
-                  class="text-white text-decoration-none"
-                  >CONTACT US</router-link
-                >
-              </div>
-            </div>
-            <div
-              class="
-                rowright2
-                py-2
-                d-flex
-                justify-content-end
-                col-lg-6 col-sm-12
-              "
-            >
-              <div>
-                <div class="inputbar">
-                  <input
-                    type="search"
-                    class="form-control text-dark"
-                    placeholder="Search"
-                  />
-                </div>
-              </div>
-              <div class="searchicon fa-lg pl-3 pt-2">
-                <a href="#"
-                  ><i class="fa fa-search text-white" style="color: grey"></i
-                ></a>
-              </div>
-            </div>
-=======
                 <i class="bi bi-at fa-lg"></i>CONTACT US
               </div>
             </div>
@@ -393,19 +329,10 @@
             </nav>
 
             <!-- ----------------searchsection end------------------------------------ -->
->>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
           </div>
         </div>
 
         <div class="midcontainer d-flex flex-column align-items-center">
-<<<<<<< HEAD
-          
-          <div class="d-flex flex-row text-white">
-            <h3 class="col-lg-12 col-sm-12 text-center">
-              <div class="mt-4">Welcome To</div>
-              <div><b>SHIFT CAR RENTAL</b></div>
-            </h3>
-=======
           <div class="d-flex flex-row text-white">
             <div class="col-lg-12 col-sm-12 text-center">
               <div class="mt-5 shift-header-image">
@@ -413,7 +340,6 @@
               </div>
               <p class="display-6">Welcome to <b>SHIFT CAR RENTAL</b></p>
             </div>
->>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
           </div>
           <div class="column">
             <div class="findacar"></div>
@@ -426,10 +352,6 @@
 
 
 <style scoped>
-<<<<<<< HEAD
-@import "../assets/shiftstyle.css";
-</style>
-=======
 .containermain {
   background-color: #dedede;
   border-radius: 20px;
@@ -483,4 +405,3 @@ export default {
   },
 };
 </script>
->>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
