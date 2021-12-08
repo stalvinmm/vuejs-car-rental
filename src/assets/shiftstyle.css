@@ -1,9 +1,21 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+=======
+@font-face {
+    font-family: verd 1;
+    src: url(./fonts/verdana.ttf);
+}
+
+>>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: 'Lora', serif;
+=======
+    font-family: verd 1;
+>>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
 }
 
 
@@ -18,7 +30,11 @@
 }
 
 .row1 {
+<<<<<<< HEAD
     padding: 30px 0px;
+=======
+    padding-top: 30px;
+>>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
 }
 
 .shiftimage {
@@ -44,12 +60,15 @@
     margin-left: 560px;
 }
 
+<<<<<<< HEAD
 
 /* input.transparent-input {
     background-color: transparent !important;
     border: none !important;
 } */
 
+=======
+>>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
 #border1 {
     color: white;
     background: white;
@@ -73,7 +92,11 @@
 }
 
 .sectioncontainer1 {
+<<<<<<< HEAD
     justify-content: space-between;
+=======
+    padding-top: 10vh;
+>>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
 }
 
 .section2a {
@@ -172,6 +195,7 @@
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width:360px) {
     .con1,
     .headerbtn {
@@ -185,6 +209,8 @@
     }
 }
 
+=======
+>>>>>>> 89f2afed779681a38bb51ac9f64b73588480f260
 #more {
     display: none;
 }
