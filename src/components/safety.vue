@@ -3,9 +3,9 @@
     <div class="sectioncontainer2 d-flex row" style="position: relative">
       <div class="pimage"><img src="../assets/images/image3.png" alt="image" /></div>
       <div class="section1b ml-2 mt-5 col-lg-12 col-sm-12">
-        <div class="col-sm-7 col-md-8 col-lg-12 text-white">
+        <div class=" text-white pl-5">
           <h3>We are Responsible for Safety</h3>
-          <p>
+          <p class="w-50">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
             dolores repudiandae, consectetur adipisci pariatur quod, ad
             reiciendis rerum aut nisi odit commodi itaque delectus deleniti
@@ -15,7 +15,7 @@
           </p>
         </div>
         <div class="pb-3">
-          <button type="button" class="btn btn-primary mt-5 px-4">
+          <button type="button" class="btn btn-primary mb-5 px-4" style="margin-left: 30%;">
             Get in Touch!
           </button>
         </div>

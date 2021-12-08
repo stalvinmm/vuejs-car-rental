@@ -1,20 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
-// import VueRouter from 'vue-router'
-// import Loginpage from './components/loginpage'
-// Vue.use(VueRouter)
-Vue.config.productionTip = false
 
-// const routes = [
-//     { path: '/loginpage', component: Loginpage }
-// ]
-// const router = new VueRouter({
-//     routes
-// })
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faHatWizard)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
     vuetify,
-    // router: router,
     render: h => h(App)
 }).$mount('#app')

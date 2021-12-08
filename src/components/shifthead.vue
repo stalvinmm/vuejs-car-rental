@@ -18,8 +18,9 @@
                 80074438
               </div>
               <div class="watsapp text-white pl-4">
-                <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i> WATSAPP
-                : +971 56 549 2707
+                <img
+                  src="https://img.icons8.com/color/38/000000/whatsapp--v1.png"
+                />+971 56 549 2707
               </div>
             </div>
             <div
@@ -65,14 +66,14 @@
                   <a class="dropdown-item" href="#">Spanish</a>
                 </div>
               </div>
-              <!-- ------------------------register section------------------ -->
+              <!-- ------------------------register section start------------------ -->
               <div>
-                  <div class="register-btn-head">
-
+                <div class="register-btn-head">
                   <div class="text-center">
-                    <v-dialog v-model="dialog" width="200">
+                    <v-dialog v-model="dialog" width="200" >
                       <template v-slot:activator="{ on, attrs }">
                         <v-btn
+                        id="register-btn-tr"
                           class="btn btn-light"
                           color="text-capitalize"
                           dark
@@ -83,8 +84,8 @@
                         </v-btn>
                       </template>
 
+                        <!-- ------------------------------------register form--------------------------------------- -->
                       <v-card>
-                        <!-- --------------------------------------------------------------------------- -->
 
                         <v-row justify="center">
                           <v-dialog v-model="dialog" persistent>
@@ -273,23 +274,25 @@
                       </v-card>
                     </v-dialog>
                   </div>
-                
-                  </div>
+                </div>
               </div>
               <!-- --------------------------------------------------register section end------------------------ -->
             </div>
           </div>
-          <!-- ----------------------------------------------search section------------------------------------- -->
-          <div class="row2 d-flex row">
+          <!-- ----------------------------------------------about/offers section------------------------------------- -->
+
+          <div class="row2 d-flex row justify-content-between">
             <div
-              class="rowleft2 d-flex text-white col-lg-6 col-md-12 col-sm-12"
+              class="
+                abouthead
+                rowleft2
+                d-flex
+                text-white
+                col-lg-6 col-md-12 col-sm-12
+              "
             >
-              <div class="about1 pl">
-                <i class="bi bi-house fa-lg"></i
-                ><router-link to="/" class="text-decoration-none text-white"
-                  >HOME</router-link
-                >
-              </div>
+              <div class="aboutbg"></div>
+              <div class="about1 pl"><i class="bi bi-house fa-lg"></i>HOME</div>
               <div class="about1 pl-4">
                 <i class="bi bi-person-fill fa-lg"></i>ABOUT US
               </div>
@@ -297,47 +300,46 @@
                 <i class="bi bi-percent fa-lg"></i>OFFERS
               </div>
               <div class="contact1 pl-4">
-                <i class="bi bi-at fa-lg"></i
-                ><router-link
-                  to="/howitworks"
-                  class="text-white text-decoration-none"
-                  >CONTACT US</router-link
-                >
+                <i class="bi bi-at fa-lg"></i>CONTACT US
               </div>
             </div>
-            <div
-              class="
-                rowright2
-                py-2
-                d-flex
-                justify-content-end
-                col-lg-6 col-sm-12
-              "
-            >
-              <div>
-                <div class="inputbar">
-                  <input
-                    type="search"
-                    class="form-control text-dark"
-                    placeholder="Search"
-                  />
-                </div>
-              </div>
-              <div class="searchicon fa-lg pl-3 pt-2">
+
+            <!-- -----------------------------searchbar start-------------------------------------------- -->
+
+            <nav class="nav-bar d-flex w-auto">
+              <form class="form-inline">
+                <input
+                  class="form-control mr-sm-2 "
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="search-btn-tr"
+                />
+
+                <!-- ----button--- -->
+                <button>
+                  <div class="searchicon fa-lg">
                 <a href="#"
                   ><i class="fa fa-search text-white" style="color: grey"></i
                 ></a>
-              </div>
-            </div>
+                  </div>
+                </button>
+                <!-- ----button--- -->
+              </form>
+            </nav>
+
+            <!-- ----------------searchsection end------------------------------------ -->
           </div>
         </div>
 
         <div class="midcontainer d-flex flex-column align-items-center">
           <div class="d-flex flex-row text-white">
-            <h3 class="col-lg-12 col-sm-12 text-center">
-              <div class="mt-4">Welcome To</div>
-              <div><b>SHIFT CAR RENTAL</b></div>
-            </h3>
+            <div class="col-lg-12 col-sm-12 text-center">
+              <div class="mt-5 shift-header-image">
+                <img src="../assets/images/carrental2.png" alt="shift image" />
+              </div>
+              <p class="display-6">Welcome to <b>SHIFT CAR RENTAL</b></p>
+            </div>
           </div>
           <div class="column">
             <div class="findacar"></div>
@@ -353,6 +355,43 @@
 .containermain {
   background-color: #dedede;
   border-radius: 20px;
+}
+.shift-header-image img {
+  width: 300px;
+}
+.abouthead {
+  position: relative;
+  z-index: 1;
+}
+.aboutbg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 50%;
+  width: 455px;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.nav-bar{
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+#search-btn-tr{
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+#register-btn-tr{
+      border: none;
+    background-color: transparent;
+}
+::placeholder {
+  color: white;
 }
 
 </style>

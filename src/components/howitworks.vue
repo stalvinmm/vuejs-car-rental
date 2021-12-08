@@ -1,10 +1,10 @@
 <template>
   <div class="row">
     <div class="hiw container">
-      <h1 class="pt-5 mb-5" style="text-align: center">
+      <div class="pt-5 mb-5 display-4" style="text-align: center">
         HOW IT
         <font class="text-info ml-2">WORKS</font>
-      </h1>
+      </div>
       <div class="howitworks row d-flex justify-content-center">
         
         <div class="subhowitworks px-2 col-sm-6 col-lg-3">
